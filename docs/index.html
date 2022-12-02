@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Michaël HUBERT">
+		<meta name="description" content="KoeScript is a lightweight scripting language aimed for a pleasant writing of dialogues in video games and such.">
+
+		<link rel="shortcut icon" href="favicon.svg">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<title>KoeScript • Light scripting language</title>
+	</head>
+	<body>
+		<header>
+			<nav class="navbar navbar-dark">
+				<div class="container-md">
+					<a class="navbar-brand" href="#">
+						<img id="logo" src="img/logo_white.svg" alt="KoeScript official logo">
+						<span>v1.0.0</span>
+					</a>
+					<div>
+						<a class="navbar-brand" href="https://github.com/komanaki/koescript" target="_blank" rel="noopener" title="GitHub repository">
+							<img src="img/github.svg" height="50" alt="Github">
+						</a>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<section class="container">
+				<div class="row">
+					<div class="col-md" id="hero">
+						<h1>A modern <strong>scripting language</strong> for a pleasant writing of <strong>long dialogues</strong> in video games.</h1>
+						<p>Any text line is considered as a dialogue message, unless it explicitly calls one of the language features.<br>It's really that simple.</p>
+						<a class="btn btn-primary btn-lg" href="https://github.com/komanaki/koescript#-how-to-start" role="button">
+							<svg height="25" viewBox="0 0 21 21" width="25" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" transform="translate(3 3)"><path d="m3.5 7.5 4 4 4-4"/><path d="m7.5.5v11"/><path d="m.5 14.5h14"/></g></svg>
+							How to start
+						</a>
+						<a class="btn btn-outline-primary btn-lg" href="https://github.com/komanaki/koescript/blob/main/Language-Reference.md" role="button">
+							<svg height="25" viewBox="0 0 21 21" width="25" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" transform="translate(1 2)"><path d="m16.5 12.5v-10c0-1.1045695-.8954305-2-2-2h-8c-1.1045695 0-2 .8954305-2 2v10c0 1.1045695.8954305 2 2 2h8c1.1045695 0 2-.8954305 2-2z"/><path d="m4.30542777 2.93478874-2.00419132.72946598c-1.03795581.37778502-1.57312998 1.52546972-1.19534496 2.56342553l3.42020143 9.39692625c.37778502 1.0379558 1.52546972 1.5731299 2.56342553 1.1953449l5.56843115-2.1980811"/><path d="m7.5 5.5h5"/><path d="m7.5 7.5h6"/><path d="m7.5 9.5h3"/></g></svg>
+							Language reference
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="bold-back">
+				<div class="container">
+					<div class="row flex-md-row-reverse">
+						<div class="col-md-6">
+							<div id="screen">
+								<p id="hour">16:41</p>
+								<p id="place">Momochi beach</p>
+								<p id="city">Fukuoka</p>
+								<img id="chara" src="img/guide_speaking.png" alt="Character sprite">
+								<div id="message">
+									<span>Guide</span>
+									<p></p>
+								</div>
+								<div id="sidemessage"></div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div id="codedemo">
+								<pre></pre>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md">
+							<p id="codelegend">&nbsp;</p>
+							<p class="text-center">The KoeScript lines are slowly executed for demonstration purposes.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section>
+				<div class="container">
+					<div class="row">
+						<div class="col-md">
+							<ul id="featureslist">
+								<li>✍️ Easy to <strong>read and write</strong>, even as a non-programmer</li>
+								<li>💁 Can be <strong>implemented as you want</strong> to fit any game or application</li>
+								<li>📖 With <strong>common functions & tags</strong> to ensure a coherent usage between projects</li>
+								<li>🤗 An original implementation in C# that even <strong>beginner developers</strong> can understand</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="container">
+					<div class="row feature flex-md-row-reverse">
+						<div class="col-md-4">
+							<img src="img/illu_why.svg" alt="Opposition of visual novel makers tied to engines or languages, and KoeScript that isn't tied to anything">
+						</div>
+						<div class="col-md-8">
+							<h2>Why.</h2>
+							<p>A lot of existing scripting languages already exists for a long time, especially speaking of visual novel games, but they're always very coupled with their corresponding game engine. Even though some of them have been implemented in other game engines, I thought it could be nice to make from scratch a new scripting language that's implementation agnostic, while being inspired by the existing ones.</p>
+							<p>Having the same language in different projects, using different engines or frameworks, makes it easy for developers and storywriters.</p>
+							<p>Mainly made for long dialogues with punctual needs to call functions and such, KoeScript have a very lightweight syntax with a limited set of features.</p>
+						</div>
+					</div>
+					
+					<div class="row feature">
+						<div class="col-md-4">
+							<img src="img/illu_agnostic.svg" alt="Each project can interpret differently the same KoeScript function call, as it suits them">
+						</div>
+						<div class="col-md-8">
+							<h2>100% agnostic.</h2>
+							<p>Can you game understand a <code>sfx</code> function call within a KoeScript dialogue ? Are functions executed line-by-line, or together just before a new dialogue message ? It's all up to you. All of the KoeScript implementations are just meant to parse KoeScript dialogues and represent them in a more code-friendly way, so that each line can be rapidly processed by your game or application.</p>
+							<p>Of course, depending on the needs of your game or application, you decide of which functions or tags can be used in a KoeScript dialogue. To have a consistent KoeScript usage across various projects, you can choose to follow the Common Reference when you'll implement functions call and tags parsing.</p>
+						</div>
+					</div>
+					
+					<div class="row feature flex-md-row-reverse">
+						<div class="col-md-4">
+							<img src="img/illu_open.svg" alt="The accessible source code and documentation can lead to easy implementations or languages forks">
+						</div>
+						<div class="col-md-8">
+							<h2>Open to all.</h2>
+							<p>The original C# implementation could have used a more complex and faster parsing, but it wasn't necessary for such a straightforward scripting language. It makes it easy for everyone, even beginners developers, to have a look inside the parser and understand how text line become usable pieces of code. As such, it also makes it way easier for everyone to collaborate on the KoeScript C# implementation.</p>
+							<p>You're invited to create your own implementation from scratch in the language that suits you or your project the most. Surely you'll be able to implement most of the language syntax in no time. When used in video games, the execution flow may be the most difficult challenge to overcome, which is why the living Unity implementation is also made available.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<h3>
+								<svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 3)"><line x1="10.5" x2="6.5" y1=".5" y2="14.5"/><polyline points="7.328 2.672 7.328 8.328 1.672 8.328" transform="rotate(135 4.5 5.5)"/><polyline points="15.328 6.672 15.328 12.328 9.672 12.328" transform="scale(1 -1) rotate(-45 -10.435 0)"/></g></svg>
+								Implementations
+							</h3>
+							<p>Due to its first use in an Unity game, the first implementation of KoeScript is written in C#. Over extreme performance, an simpler and more straightforward parsing system has been chosen so that nearly anybody can have a look over the source code and understand its inner workings.</p>
+							<h4>Languages</h4>
+							<ul>
+								<li><strong>C#</strong> : <a href="https://github.com/komanaki/koescript/tree/main/koescript-cs">koescript-cs</a></li>
+							</ul>
+							<h4>Games engines</h4>
+							<ul>
+								<li><strong>Unity</strong> : <a href="https://github.com/komanaki/koescript/tree/main/koescript-unity">koescript-unity</a></li>
+							</ul>
+							<h4>Text editors & IDE</h4>
+							<ul>
+								<li><strong>VS Code</strong> : <a href="https://github.com/komanaki/koescript/tree/main/koescript-vscode">koescript-vscode</a></li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<h3>
+								<svg height="21" viewBox="0 0 21 21"  xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 3)"><path d="m12.5.5 3 3-3 3"/><path d="m15.5 3.5h-5l-4 5.086"/><path d="m12.5 9.5 3 3-3 3"/><path d="m15.5 12.5h-5l-4-4h-6"/></g></svg>
+								Contribute
+							</h3>
+							<p>No matter how big, any contribution is very much appreciated. KoeScript is still a living language and its specification isn't entirely finished, so we're open to all ideas. Please take a look at our <a href="https://github.com/komanaki/koescript/blob/main/CONTRIBUTING.md">Contributing guide</a> to do so, and also the <a href="https://docs.github.com/get-started/quickstart/contributing-to-projects">GitHub documentation</a> if you're new to GitHub.</p>
+							<h3>
+								<svg height="21" viewBox="0 0 21 21"  xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" transform="translate(2 2)"><path d="m2.5.5h12c1.1045695 0 2 .8954305 2 2v12c0 1.1045695-.8954305 2-2 2h-12c-1.1045695 0-2-.8954305-2-2v-12c0-1.1045695.8954305-2 2-2z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><path d="m.5 4.5h16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/><g fill="currentColor"><circle cx="8.5" cy="8.5" r="1"/><circle cx="4.5" cy="8.5" r="1"/><circle cx="4.5" cy="12.5" r="1"/></g></g></svg>
+									Roadmap
+								</h3>
+							<p>The language specification is still a living document as a first stable version hasn't been reached yet.</p>
+							<p><span class="color-p">⬤</span> Feature present in specification <br> <span class="color-p">🞅</span> Feature in consideration <br> <span class="badge bg-primary">2.0</span> Targeted version</p>
+							<ul class="roadmap">
+								<li>Messages</li>
+								<li>Function calls</li>
+								<li>Labels</li>
+								<li class="todo">Context variable attribution</li>
+								<li class="todo">Choice-based flow control</li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="container">
+				<p class="float-end mb-1">
+					<a href="#">
+						<svg width="21" height="21" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 2)"><circle cx="8.5" cy="8.5" r="8"/><path d="m11.5 7.5-3-3-3 3"/><path d="m8.5 4.5v8"/></g></svg>
+						Back to top
+					</a>
+				</p>
+				<img id="logo" src="img/logo_color.svg" alt="KoeScript official logo">
+				<p>Royalty-free sprites from <a href="https://wataokiba.net/" rel="noopener noreferrer" target="_blank">立ち絵素材　わたおきば</a> - Icons from <a href="https://systemuicons.com" rel="noopener noreferrer" target="_blank">System UIcons</a></p>
+			</div>
+		</footer>
+		<script src="js/typewriter.js"></script>
+		<script src="js/home.js"></script>
+	</body>
+</html>
+

@@ -1,0 +1,45 @@
+{
+    "name": "koescript-vscode",
+    "displayName": "koescript-vscode",
+    "description": "KoeScript language support with syntax highlighting.",
+    "version": "1.0.0",
+    "publisher": "komanaki",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/komanaki/koescript/tree/koescript-vscode"
+    },
+    "icon": "icon_light.png",
+    "engines": {
+        "vscode": "^1.56.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "main": "./client/extension.js",
+    "activationEvents": [
+        "onLanguage:koescript"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "koescript",
+            "aliases": ["KoeScript", "koescript"],
+            "extensions": [".koe"],
+            "configuration": "./language-configuration.json",
+            "icon": {
+                "light": "./icon_light.png",
+                "dark": "./icon_light.png"
+            }
+        }],
+        "grammars": [{
+            "language": "koescript",
+            "scopeName": "source.koescript",
+            "path": "./syntaxes/koescript.tmLanguage"
+        }],
+        "capabilities": {
+            "hoverProvider": "true",
+            "signatureHelpProvider": {
+                "triggerCharacters": ["@", " "]
+            }
+        }
+    }
+}

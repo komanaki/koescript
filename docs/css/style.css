@@ -1,0 +1,367 @@
+
+@font-face {
+    font-family: "Inter";
+    font-style:  normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("inter/Inter-Regular.woff2?v=3.19") format("woff2"),
+         url("inter/Inter-Regular.woff?v=3.19") format("woff");
+}
+
+@font-face {
+    font-family: "Inter";
+    font-style:  normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url("inter/Inter-Black.woff2?v=3.19") format("woff2"),
+         url("inter/Inter-Black.woff?v=3.19") format("woff");
+}
+
+body {
+    font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.navbar-brand #logo {
+    width: 40vw;
+}
+
+.navbar-brand span {
+    padding-left: 7px;
+    font-size: 0.8em;
+}
+
+h2 {
+    color: #ff4e50;
+    font-weight: 900;
+}
+
+h3 {
+    padding: 0.2em;
+    color: white;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    background-color: #FF4E50;
+}
+
+h3 svg {
+    margin-top: -0.1em;
+    height: 1.1em;
+}
+
+code {
+    color: #FF4E50;
+    font-weight: bold;
+}
+
+.btn {
+    font-weight: 900;
+}
+
+#hero {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+#hero strong {
+    color: #FF4E50;
+}
+
+.bold-back {
+    padding-top: 1rem;
+    color: white;
+    background-color: #FF4E50;
+}
+
+.bold-back h2 {
+    color: white;
+}
+
+#codedemo {
+    height: 100%;
+    background-color: #14161a;
+}
+
+#codedemo pre {
+    position: relative;
+    padding: 1em;
+    font-family: "Cascadia Code", "Consolas", monospace;
+    color: #DDD;
+    background-color: #14161a;
+}
+
+#codedemo pre::after {
+    content: "";
+    display: block;
+    height: 1.6em;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1em;
+    background-color: #191c23;
+    mix-blend-mode: screen;
+}
+
+@keyframes translateDown {
+    0% {
+        background-position-y: bottom;
+    }
+    100% {
+        background-position-y: top;
+    }
+}
+@keyframes blink {
+    0% {
+        background-color: #ffd6d7;
+    }
+    100% {
+        background-color: #EEE;
+    }
+}
+
+nav {
+    background-color: #FF4E50;
+}
+
+#screen {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    font-family: "Inter";
+    background-color: #c1c1c1;
+    background-size: cover;
+    /*border: black 2px solid;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(0 0 0);*/
+    overflow: hidden;
+}
+
+#screen #hour {
+    display: none;
+    position: absolute;
+    margin: 0;
+    padding: 0 2em 0 1em;
+    top: 5%;
+    left: 7%;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 900;
+    line-height: 1em;
+    background-color: white;
+}
+
+#screen #place {
+    display: none;
+    position: absolute;
+    margin: 0;
+    padding: 0 1em;
+    top: 12%;
+    left: 7%;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 900;
+    line-height: 1em;
+    background-color: white;
+}
+
+#screen #city {
+    display: none;
+    position: absolute;
+    margin: 0;
+    padding: 0.5em 0;
+    color: white;
+    top: 0%;
+    left: 4%;
+    font-weight: 900;
+    letter-spacing: -3px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-transform: uppercase;
+    background: rgb(49, 97, 230);
+}
+
+#screen #chara {
+    display: none;
+    width: 60%;
+    position: absolute;
+    right: 0%;
+    bottom: -100%;
+}
+
+#screen #message {
+    display: none;
+    padding: 0.5em;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: 8%;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    border: 5px solid rgb(49, 97, 230);
+    border-radius: 0.5em;
+}
+
+#screen #message span {
+    display: block;
+    width: 30%;
+    margin: -2em 0em 0 0;
+    padding: 0 0.5em;
+    color: white;
+    font-weight: 900;
+    background: rgb(49, 97, 230);
+    border-radius: 0.5em 0.5em 0 0;
+}
+
+#screen #message p {
+    margin: 0.5em 0 1em 0;
+    font-size: 1.2rem;
+}
+
+#screen #sidemessage {
+    display: none;
+    padding: 0.5em;
+    position: absolute;
+    right: 10%;
+    bottom: 40%;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#codelegend {
+    padding: 1em;
+    background: #EEE;
+    color: #333;
+    text-align: center;
+    font-family: "Cascadia Code", "Consolas", monospace;
+    font-size: 1rem;
+}
+
+#featureslist {
+    margin: 4rem 0;
+    padding: 0;
+    font-size: 1.2rem;
+    line-height: 1.5em;
+    list-style-type: none;
+}
+
+#featureslist li {
+    margin-bottom: 0.5rem;
+}
+
+.feature {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.feature p {
+    font-size: 20px;
+    letter-spacing: -0.017em;
+    line-height: 28px;
+}
+
+ul li {
+    padding-left: 0.5em;
+    padding-bottom: 0.3em;
+}
+
+ul li::marker {
+    content: "⬤";
+    color: #FF4E50;
+}
+
+.color-p {
+    color: #FF4E50;
+}
+
+ul.roadmap {
+    padding-left: 1.5em;
+    font-size: 1.2em;
+}
+
+ul.roadmap li {
+    padding-left: 0.8em;
+    padding-bottom: 0.5em;
+    position: relative;
+}
+
+ul.roadmap li:first-of-type::before {
+    border-radius: 1em 1em 0 0;
+}
+
+ul.roadmap li:last-of-type::before {
+    bottom: 0.5em;
+    border-radius: 0 0 1em 1em;
+}
+
+/* ⮿ 🞅 🞉*/
+ul.roadmap li::marker {
+    /*content: "⬤";*/
+    color: white;
+}
+
+ul.roadmap li.todo::marker {
+    content: "🞅";
+}
+
+ul.roadmap li::before {
+    content: "";
+    width: 1.3em;
+    position: absolute;
+    background-color: #FF4E50;
+    left: -1.1em;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #EEE;
+}
+
+footer #logo {
+    max-width: 100%;
+    max-height: 70px;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    
+    .navbar-brand #logo {
+        width: auto;
+        height: 50px;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    #hero h1 {
+        margin-bottom: 1.5rem;
+        font-size: 3rem;
+    }
+
+    #hero p {
+        font-size: 1.5rem;
+    }
+
+    #codedemo {
+        font-size: 1.3rem;
+    }
+
+    #codelegend {
+        font-size: 1.5rem;
+    }
+
+    #featureslist {
+        font-size: 1.5rem;
+        line-height: 1.8em;
+    }
+
+    #featureslist li {
+        margin-bottom: 0;
+    }
+
+    .feature h2 {
+        margin-bottom: 1rem;
+    }
+}
