@@ -14,7 +14,7 @@ REPL（read–eval–print loop）のようにも使用できるので、ゲー�
 
 * プログラマーじゃなくても読みやすい書きやすい
 * どんなゲームやアプリに使用するため自身通りに実装できます
-* 色んなプロジェクトで辻褄の合うあるために共通な機能とタグがあります
+* 色んなプロジェクトで辻褄の合うあるために共通な関数とタグがあります
 * 構文強調表示などためにVisual Studio Code向けの拡張機能があります
 
 ## ⌨️ スクリプト例
@@ -23,7 +23,7 @@ REPL（read–eval–print loop）のようにも使用できるので、ゲー�
 # これで音量の80パーで音楽を再生しましょう。
 @bgm "lonely_moon" volume=0.8
 
-# 壁紙を変更するように機能を呼び。薄りながら下から上まで滑る。
+# 壁紙を変更するように関数を呼び。薄りながら下から上まで滑る。
 @bg "school_corridor" fade translate="up"
 
 # "guide"と申すキャラが「Hello there!」って言います。
@@ -37,7 +37,7 @@ That's still me speaking, even without any character information.
 
 言語の構文を理解できるように、[Language Reference（言語参考）](Language-Reference.md)をお読みください。
 
-もし自分のプロジェクトに共通な機能とタグを実装したいなら、[Common Functions（共通の機能）](Common-Functions.md)そして[Common Tags（共通のタグ）](Common-Tags.md)をお読みください。
+もし自分のプロジェクトに共通な関数とタグを実装したいなら、[Common Functions（共通の関数）](Common-Functions.md)そして[Common Tags（共通のタグ）](Common-Tags.md)をお読みください。
 
 公式な実装でどう言語がソードコードになってわかりたいなら、それとも自分の実装を手伝うように、[Implementation Guide（実装ガイド）](Implementation-Guide.md)をお読みください。
 
