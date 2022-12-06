@@ -2,6 +2,8 @@
 
 ![header](assets/header.png)
 
+<h3 align="center"><a href="https://github.com/komanaki/koescript/blob/main/README.md">English</a> • <a href="https://github.com/komanaki/koescript/blob/main/README.ja.md">日本語</a></h3>
+
 KoeScript is a new **lightweight scripting language** aimed for a pleasant writing of long **dialogues** in video games, especially in visual novels.
 
 It can also be used like a **REPL** (read–eval–print loop), making it perfect for in-game chat or scripting console as well.
@@ -64,7 +66,7 @@ _Don't refrain from opening a pull request to add your game or application here 
 
 As a fresh project, we're open to any contribution. Please make sure to read the [Contributing](CONTRIBUTING.md) file to know how to.
 
-This project follows a [code of conduct](CODE_OF_CONDUCT.md) which you're invited to read before contributing.
+This project follows a [Code of conduct](CODE_OF_CONDUCT.md) which you're invited to read before contributing.
 
 ## ⚖️ License
 
