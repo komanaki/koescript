@@ -14,6 +14,10 @@ There is nothing to build as the source code will be included as-is inside the p
 
 The recommended way is to add this package through the **Package Manager**. If its window is not open yet in your Editor view, you can open it from the top main menu : **Window > Package Manager**.
 
-Then, you'll have to click the very tiny **+** button to add a new package using this folder content.
+Then, you'll have to click the very tiny `+` button to add a new package using this folder content.
 
 ![Package manager window](Documentation/packagemanager.png)
+
+In the submenu, choose **Add package from git URL...** and write the following URL :
+
+`https://github.com/komanaki/koescript.git?path=/koescript-unity`
